@@ -1,0 +1,15 @@
+.page{
+    height:100vh;
+}
+.relative{
+    position: relative;
+    left: 90px;
+}
+.fixed{
+    position: fixed;
+    top: 100px;
+}
+.sticky{
+    position: sticky;
+    top: 100px;
+}
