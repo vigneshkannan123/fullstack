@@ -13,6 +13,7 @@ import Form from './hooks/Form.jsx'
 import State from './hooks/State.jsx'
 import Effect from './hooks/Effect.jsx'
 import Post from './hooks/post.jsx'
+import Reducer from './hooks/Reducer.jsx'
  
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Route path='/form' element={<Form/>}></Route>
       <Route path='/Effect' element={<Effect/>}></Route>
       <Route path='/Post' element={<Post/>}></Route>
+      <Route path='/Reducer' element={<Reducer/>}></Route>
     </Routes>
     </>
   )

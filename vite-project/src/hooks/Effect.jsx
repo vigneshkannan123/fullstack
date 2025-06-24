@@ -4,7 +4,7 @@ const Effect = () => {
     const [count,setCount]=useState(0)
     const [users,setUsers]=useState([])
     useEffect(()=>{
-        fetch('https://jsonplaceholder.typicode.com/users')
+        fetch('http://localhost:3000/get')
         .then((res)=>res.json())
         .then((data)=>setUsers(data))
     },[])
@@ -15,7 +15,7 @@ const Effect = () => {
         <button onClick={()=>setCount(count+1)}>+</button>
         <ul>
             {users.map((user)=>(
-                <li key={user.id}>{user.name}</li>
+                <li key={user._id}>{user.name}</li>
             ))}
         </ul>
     </div>
